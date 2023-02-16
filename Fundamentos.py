@@ -94,3 +94,41 @@ t = (25, "tupla", 1 + 4j, 3.1416)
 print(t)
 print(t[2])
 print("t[1:4]:", t[1:4])
+
+nuevoTema("Conjuntos")
+t={50, 20, 30, 40, 10, 50}
+print("Conjunto t=", t,type(t))
+
+nuevoTema("Diccionario")
+d={1:"valor1",
+      "valor2":2j}
+print(d,type(d))
+print("d[valor2]:", d["valor2"])
+
+nuevoTema("Cadenas")
+cadena1 = "Cadena con comillas dobles"
+cadena2 = 'Cadena con comillas simples'
+
+print(cadena1, type(cadena1))
+print(cadena2, type(cadena2))
+
+cadenaMultilinea = '''Esta es una cadena 
+de varias lineas con tabulares y 
+saltos
+de
+linea'''
+
+print(cadenaMultilinea)
+print("Segmentacion de cadenas")
+print(cadena1[5:11])
+print(cadena1[:5])
+print(cadena1[7:])
+print(cadena1[-8:-1])
+print(cadena1[0:18:2])
+print(cadena1[0:18:3])
+
+cadena1 = "Hola"
+cadena4 = (cadena1 + " ") * 5
+print(cadena4)
+cadena5 = cadena4.capitalize()
+print(cadena5)
